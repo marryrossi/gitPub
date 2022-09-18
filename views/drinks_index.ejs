@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>gitPub</title>
+    <title>gitPub Drinks</title>
 </head>
 <body>
     <h1>Welcome to gitPub</h1>
     <ul>
-        <% for(let i=0; i < allDrinks.length; i++) { %>
-        <li>
-            <a href="/drinks/<%=i%>"><%= allDrinks[i].name %></a>
-        </li>
-        <% } %>
+        <% for (i=0; i < allDrinks.length; i++) { %>
+            <li>
+                <a href="/drinks/<%= [i] %>">
+                    <%= allDrinks[i].name[0].toUpperCase() + allDrinks[i].name.slice(1, allDrinks[i].name.length) %>
+                </a>
+            </li>
+            <% } %>
     </ul>
 </body>
 <style type="text/css">
     body {
-      color: blanchedalmond;
+      color: coral;
       background-color: lavender;
     }
 </style>

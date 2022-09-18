@@ -4,15 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>gitPub</title>
+    <title>gitPub Drinks</title>
 </head>
 <body>
-    <h1>Drink Selection: <%= drink.name %></h1>
-    <img src="<%=drink.image%>" alt=""></img>
+    <body>
+        <h1>At foo bar</h1>
+        <h2>
+            <%= drinkInfo.name[0].toUpperCase() + drinkInfo.name.slice(1, drinkInfo.name.length) %>
+        </h2>
+        <img src="<%= drinkInfo.image%>.jpg">
+        <h3>Price: $<%= drinkInfo.price %></h3>
+        <p>
+            <a href="<%= /drinks/ %>">Back to Home</a>
+        </p>
 </body>
 <style type="text/css">
     body {
-      color: blanchedalmond;
+      color: coral;
       background-color: lavender;
     }
 </style>
