@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gitPub Food</title>
+</head>
+<body>
+    <h1>Welcome to gitPub food</h1>
+    <ul>
+        <% for (i=0; i < allFoods.length; i++) { %>
+            <li>
+                <a href="/foods/<%= [i] %>">
+                    <%= allFoods[i].name[0].toUpperCase() + allFoods[i].name.slice(1, allFoods[i].name.length) %>
+                </a>
+            </li>
+            <% } %>
+    </ul>
+    <a href=" <%= /drinks/ %>">Drink Menu</a>
+</body>
+<style type="text/css">
+    body {
+        color: coral;
+        background-color: lavender;
+    }
+</style>
+</html>
